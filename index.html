@@ -128,21 +128,11 @@
   <div class="section-inner">
     <div class="eyebrow">Technical Debt</div>
     <h2>SF Flow Auditor</h2>
-    <p class="desc">Audits Salesforce flows and Apex classes for technical debt, flagging stale automations, deactivated owners, and outdated API versions, before they become someone else's emergency.</p>
-    <div class="stack"><span>Python</span> &middot; <span>Claude</span></div>
+    <p class="desc">Audits Salesforce flows for technical debt, flagging stale automations, deactivated owners, and outdated API versions before they become someone else's emergency. The Java version adds live org connectivity via the Tooling API, parallel Claude API calls, incremental caching between runs, and a filterable HTML severity report.</p>
+    <div class="stack"><span>Python</span> &middot; <span>Java 17</span> &middot; <span>Maven</span> &middot; <span>Claude</span> &middot; <span>Salesforce Tooling API</span> &middot; <span>JUnit 5</span></div>
     <div class="pill-row">
-      <a class="pill pill-outline" href="https://github.com/cduffy16/sf-flow-auditor">View code</a>
-    </div>
-  </div>
-</div>
-<div class="section" id="flow-audit-agent">
-  <div class="section-inner">
-    <div class="eyebrow">Technical Debt</div>
-    <h2>Flow Audit Agent</h2>
-    <p class="desc">Connects directly to a Salesforce org via the Tooling API, audits all active flows in parallel using Claude, and outputs a severity-ranked HTML report with live filters. Incremental caching means re-runs only process flows that have actually changed.</p>
-    <div class="stack"><span>Java 17</span> &middot; <span>Maven</span> &middot; <span>Claude</span> &middot; <span>Salesforce Tooling API</span></div>
-    <div class="pill-row">
-      <a class="pill pill-outline" href="https://github.com/cduffy16/salesforce-flow-audit-agent">View code</a>
+      <a class="pill pill-outline" href="https://github.com/cduffy16/sf-flow-auditor">Python</a>
+      <a class="pill pill-outline" href="https://github.com/cduffy16/salesforce-flow-audit-agent">Java</a>
     </div>
   </div>
 </div>
