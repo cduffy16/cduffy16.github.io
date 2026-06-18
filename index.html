@@ -13,22 +13,18 @@
     --bg-alt: #FBFBFD;
     --accent: #0071E3;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
     color: var(--text);
     background: var(--bg);
     -webkit-font-smoothing: antialiased;
   }
-
   .hero {
     background: var(--bg-hero);
     padding: 100px 24px 90px;
     text-align: center;
   }
-
   .hero h1 {
     font-size: clamp(56px, 9vw, 96px);
     font-weight: 700;
@@ -36,21 +32,18 @@
     line-height: 1;
     margin-bottom: 16px;
   }
-
   .hero p {
     font-size: clamp(20px, 2.5vw, 28px);
     color: var(--text);
     font-weight: 400;
     margin-bottom: 36px;
   }
-
   .pill-row {
     display: flex;
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
   }
-
   .pill {
     display: inline-block;
     padding: 14px 32px;
@@ -60,34 +53,27 @@
     text-decoration: none;
     transition: opacity 0.15s ease;
   }
-
   .pill:hover { opacity: 0.8; }
-
   .pill-solid {
     background: var(--accent);
     color: #fff;
   }
-
   .pill-outline {
     background: transparent;
     color: var(--accent);
     border: 1.5px solid var(--accent);
   }
-
   .section {
     padding: 100px 24px;
     text-align: center;
   }
-
   .section:nth-of-type(even) {
     background: var(--bg-alt);
   }
-
   .section-inner {
     max-width: 720px;
     margin: 0 auto;
   }
-
   .eyebrow {
     font-size: 14px;
     font-weight: 600;
@@ -96,44 +82,37 @@
     letter-spacing: 0.06em;
     margin-bottom: 12px;
   }
-
   .section h2 {
     font-size: clamp(36px, 5vw, 56px);
     font-weight: 700;
     letter-spacing: -0.015em;
     margin-bottom: 16px;
   }
-
   .section p.desc {
     font-size: clamp(18px, 2vw, 21px);
     color: var(--text-secondary);
     line-height: 1.5;
     margin-bottom: 28px;
   }
-
   .stack {
     font-size: 14px;
     color: var(--text-secondary);
     margin-bottom: 28px;
   }
-
   .stack span {
     font-weight: 600;
     color: var(--text);
   }
-
   footer {
     padding: 70px 24px 90px;
     text-align: center;
     color: var(--text-secondary);
     font-size: 14px;
   }
-
   footer a {
     color: var(--accent);
     text-decoration: none;
   }
-
   @media (max-width: 600px) {
     .hero { padding: 70px 20px 60px; }
     .section { padding: 70px 20px; }
@@ -141,12 +120,10 @@
 </style>
 </head>
 <body>
-
 <div class="hero">
   <h1>Caroline Duffy</h1>
   <p>GTM Engineer &amp; Salesforce Developer building AI-powered tools to automate revenue operations.</p>
 </div>
-
 <div class="section" id="flow-auditor">
   <div class="section-inner">
     <div class="eyebrow">Technical Debt</div>
@@ -158,7 +135,17 @@
     </div>
   </div>
 </div>
-
+<div class="section" id="flow-audit-agent">
+  <div class="section-inner">
+    <div class="eyebrow">Technical Debt</div>
+    <h2>Flow Audit Agent</h2>
+    <p class="desc">Connects directly to a Salesforce org via the Tooling API, audits all active flows in parallel using Claude, and outputs a severity-ranked HTML report with live filters. Incremental caching means re-runs only process flows that have actually changed.</p>
+    <div class="stack"><span>Java 17</span> &middot; <span>Maven</span> &middot; <span>Claude</span> &middot; <span>Salesforce Tooling API</span></div>
+    <div class="pill-row">
+      <a class="pill pill-outline" href="https://github.com/cduffy16/salesforce-flow-audit-agent">View code</a>
+    </div>
+  </div>
+</div>
 <div class="section">
   <div class="section-inner">
     <div class="eyebrow">Account Intelligence</div>
@@ -170,7 +157,6 @@
     </div>
   </div>
 </div>
-
 <div class="section">
   <div class="section-inner">
     <div class="eyebrow">Sales Enablement</div>
@@ -182,10 +168,8 @@
     </div>
   </div>
 </div>
-
 <footer>
   <a href="https://github.com/cduffy16">github.com/cduffy16</a>
 </footer>
-
 </body>
 </html>
